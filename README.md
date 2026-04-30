@@ -1,1 +1,1 @@
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SeaViewer91&layout=compact&theme=radical)](https://github.com/SeaViewer91)
+<img src="github-metrics.svg" alt="Metrics">
