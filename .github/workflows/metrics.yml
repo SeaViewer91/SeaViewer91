@@ -15,7 +15,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           # GitHub에서 자동으로 제공하는 권한 토큰 (따로 발급받을 필요 없음)
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           
           # 기본 대시보드 설정
           user: SeaViewer91
