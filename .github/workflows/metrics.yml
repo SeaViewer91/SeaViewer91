@@ -25,5 +25,5 @@ jobs:
           
           # 언어 비중 플러그인 설정
           plugin_languages: yes
-          plugin_languages_recent_days: 60 # 최근 60일 데이터 분석
+          # plugin_languages_recent_days: 60 # 최근 60일 데이터 분석
           plugin_languages_details: percentage
