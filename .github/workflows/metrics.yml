@@ -1,0 +1,29 @@
+name: Metrics
+
+on:
+  # 매일 자정에 자동으로 한 번씩 업데이트
+  schedule: [{cron: "0 0 * * *"}]
+  # Actions 탭에서 수동으로 버튼을 눌러서 실행할 수 있게 해줌 (매우 중요!)
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # GitHub에서 자동으로 제공하는 권한 토큰 (따로 발급받을 필요 없음)
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+          # 기본 대시보드 설정
+          user: SeaViewer91
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Seoul
+          
+          # 언어 비중 플러그인 설정
+          plugin_languages: yes
+          plugin_languages_recent_days: 60 # 최근 60일 데이터 분석
+          plugin_languages_details: percentage

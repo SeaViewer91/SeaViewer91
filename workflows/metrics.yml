@@ -1,5 +1,0 @@
-- uses: lowlighter/metrics@latest
-  with:
-    # ... 기본 설정 ...
-    plugin_languages: yes
-    plugin_languages_recent_days: 14 # 최근 14일 데이터만 분석
